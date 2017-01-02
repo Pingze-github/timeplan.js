@@ -50,8 +50,8 @@ exports.Timeplan =  function(task_list,time_finish=null,delay=5000){
                 var time_now = {
                     "hour" : date.getHours()
                     ,"minute" : date.getMinutes()
-                    ,"day" : date.getDay()
-                    ,"month" : date.getMonth()
+                    ,"day" : date.getDate()
+                    ,"month" : (date.getMonth()+1)
                     ,"second" : date.getSeconds()
                     //,"year" : date.year 不支持制定到年
                     //,"microsecond" : date.microsecond 不支持指定到毫秒
